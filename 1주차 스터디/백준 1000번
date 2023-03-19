@@ -1,0 +1,10 @@
+#define _CRT_SECURE_NO_WARNINGS //scanf()사용하기 위한 정의
+#include<stdio.h> // 표준입출력을 사용하기 위한 라이브러리
+int main() {
+    int a; // 변수1
+    int b; //변수2
+    scanf("%d", &a); //변수1 입력받음
+    scanf("%d", &b); //변수2 입력받음
+    printf("%d", a + b); // 변수1과 변수2를 더하여 출력
+    return 0;
+}

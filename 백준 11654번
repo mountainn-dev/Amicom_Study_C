@@ -1,8 +1,0 @@
-#define _CRT_SECURE_NO_WARNINGS //scanf()를 사용하기 위한 정의
-#include<stdio.h> // 표준 입출력을 위한 라이브러리
-int main() {
-    char ASCII; //아스키 코드를 입력받을 변수
-    scanf("%c", &ASCII); //아스키 코드를 입력 받음
-    printf("%d", ASCII); //입력받은 아스키 코드를 정수로 표현
-    return 0;
-}

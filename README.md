@@ -5,7 +5,29 @@
 - 정해진 작성 형식은 없습니다.
 
 ## 1주차 배운 내용
-- 이곳에 작성하시면 됩니다.
+```C
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int main() {
+	int a, b;
+
+	printf("Total days in Year\n");
+	printf("365\n");
+	printf("Circumference rate\n");
+	printf("3.1415926535\n");
+
+	printf("정수 입력 : ");
+	scanf("%d %d", &a, &b);
+	printf("입력된 정수 a = %d, b = %d \n", a, b);
+
+
+	return 0;
+}
+
+```
 
 ## 2주차 배운 내용
 - 이곳에 작성하시면 됩니다.

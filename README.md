@@ -5,7 +5,27 @@
 - 정해진 작성 형식은 없습니다.
 
 ## 1주차 배운 내용
-- 이곳에 작성하시면 됩니다.
+```C
+#include <stdio.h>
+
+int main() {
+
+	int a, b;
+
+	printf("Total days in Year\n");
+	printf("365\n");
+	printf("Circumference rate\n");
+	printf("3.1415926535\n");
+
+	printf("정수 2개를 입력하시오.\n");
+	scanf_s("%d %d", &a, &b);
+
+	printf("입력한 정수 : %d %d", a, b);
+
+	return 0;
+
+}
+```
 
 ## 2주차 배운 내용
 - 이곳에 작성하시면 됩니다.

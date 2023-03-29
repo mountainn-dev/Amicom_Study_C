@@ -31,7 +31,8 @@ int main() {
 
 ## 2주차 배운 내용
 Question1.
-'''C
+'''C'''
+
 #include <stdio.h>
 
 int main() {
@@ -52,6 +53,7 @@ int main() {
 '''
 Question2.
 '''C
+
 #include <stdio.h>
 
 int main() {
@@ -72,6 +74,7 @@ int main() {
 '''
 Question3.
 '''C
+
 #include <stdio.h>
 
 int main() {

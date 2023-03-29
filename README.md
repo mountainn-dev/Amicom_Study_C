@@ -5,7 +5,8 @@
 - 정해진 작성 형식은 없습니다.
 
 ## 1주차 배운 내용
-- #include "main.h"
+```c
+ #include "main.h"
 int main()
 {
     printf("Total days in Year\n");
@@ -21,11 +22,12 @@ int main()
     return 0;
     
 }
+```
 
 ## 2주차 배운 내용
 
 ###1번 문제
-```
+```c
 include "main.h"
 int main()
 {
@@ -48,7 +50,7 @@ int main()
 ```
 
 > 2번문제
-```
+```c
 int main() {
     
     int a;
@@ -68,6 +70,25 @@ int main() {
 }
 ```
 
+> 3번문제
+```c
+#include <stdio.h>
+
+int main() {
+    for(int i = 1 ; i<=6; i++){
+        if ( i % 2 != 0 ){
+            for(int j = 0 ; j<i; j++)
+            {
+                printf("*");
+            }
+            printf("\n");
+        }
+        else
+             printf("$\n");
+        }
+    return 0;
+}
+```
 
 ## 3주차 배운 내용
 - 이곳에 작성하시면 됩니다.

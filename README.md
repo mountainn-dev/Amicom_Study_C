@@ -47,6 +47,28 @@ int main()
 }
 ```
 
+> 2번문제
+```
+int main() {
+    
+    int a;
+    
+    printf("정수를 입력하세요");
+    scanf("%d", &a);
+    if(a % 2 != 0 && a <= 5){
+        printf("A");
+    }
+    else if(a%2 != 0 && a>=5){
+        printf("B");
+    }
+    else{
+        printf("C");
+    }
+    return 0;
+}
+```
+
+
 ## 3주차 배운 내용
 - 이곳에 작성하시면 됩니다.
 

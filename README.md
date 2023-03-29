@@ -30,24 +30,25 @@ int main() {
 ```
 
 ## 2주차 배운 내용
-'''C
+반복문 : 프로그램 내에서 똑같은 명령을 일정 횟수만큼 반복하여 수행하도록 제어하는 명령문
+1. while문
+2. do / while 문
+3. for문
 
-#include <stdio.h>
+[while 문]
+: 특정 조건을 만족할 때까지 계속해서 주어진 명령문을 반복실행한다.
+```C
+int i = 0;
+int num = 5;
 
-int main() {
-	for (int i = 1; i < 7; i++) {
-		for (int j = 1; j <= i; j++) {
-			if (i % 2 == 1)
-				printf("*");
-		}
-		if (i % 2 == 0)
-			printf("$");
-		printf("\n");
-	}
-	return 0;
+while (i < num){
+printf("while문이 %d 번째 반복수행 중입니다.\n", i+1);
+i++; // 무한루프 방지
 }
+printf("while문이 종료된 후 변수 i의 값은 %d이다.\n", i);
+```
 
-'''
+
 
 ## 3주차 배운 내용
 - 이곳에 작성하시면 됩니다.

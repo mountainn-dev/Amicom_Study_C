@@ -23,7 +23,29 @@ int main()
 }
 
 ## 2주차 배운 내용
-- 이곳에 작성하시면 됩니다.
+
+###1번 문제
+```
+include "main.h"
+int main()
+{
+    int num1 = 0;
+    printf(" 1 ≤ n ≤ 100");
+    printf("입력: ");
+    scanf("%d", &num1);
+    
+    
+    
+    if((num1 % 2 != 0 && num1 % 3 == 0) || (num1 % 2 == 0 && num1 % 5 == 0))
+    {
+        printf("출력: True");
+    }
+    else{
+        printf("출력: False");
+    }
+    return 0;
+}
+```
 
 ## 3주차 배운 내용
 - 이곳에 작성하시면 됩니다.

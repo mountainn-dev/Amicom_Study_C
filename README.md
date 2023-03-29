@@ -31,7 +31,7 @@ int main() {
 
 ## 2주차 배운 내용
 Question1.
-'''C'''
+'''C
 
 #include <stdio.h>
 

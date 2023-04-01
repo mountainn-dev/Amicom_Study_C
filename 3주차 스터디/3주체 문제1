@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int judge_369(int num1, int num2)//범위로 사용할 변수2개
+{
+	int count=0;//개수를 세기 위한 변수
+	for (int i = num1; i <= num2; i++)
+	{
+		if (i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9 || i / 10 == 3 || i / 10 == 6 || i / 10 == 9)
+			count++;
+	}
+	return count;
+}
+int main(void)
+{
+	int range1, range2;
+	printf("입력 :\n");
+	scanf("%d %d", &range1, &range2);
+	int count = judge_369(range1, range2);
+	printf("출력:\n%d", count);
+}

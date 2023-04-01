@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+
+int main(void)
+{
+	char abcd[] = "hello world you can do it don't give up";
+	int str_length = sizeof(abcd);
+	char new_arr[100];
+
+	for (int i = 0;i < str_length;i++)
+		new_arr[i] = abcd[i];
+	printf("%s", new_arr);
+}

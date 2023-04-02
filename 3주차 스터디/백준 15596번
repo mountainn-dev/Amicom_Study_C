@@ -1,8 +1,8 @@
 long long sum(int *a, int n) {
 	long long ans = 0;
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++)//배열의 첫번째 수붙터 마지막 자리까지 반복.
     {
-        ans+=a[i];
+        ans+=a[i]; // i는 배열의 0부터 마지막 자리 n까지 반복하므로, 배열에 저장된 수를 모두 더하게 된다.
     }
 	return ans;
 }

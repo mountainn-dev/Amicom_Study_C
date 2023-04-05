@@ -26,7 +26,7 @@ int main()
 
 ## 2주차 배운 내용
 
-###1번 문제
+> 1번 문제
 ```c
 include "main.h"
 int main()
@@ -91,7 +91,52 @@ int main() {
 ```
 
 ## 3주차 배운 내용
-- 이곳에 작성하시면 됩니다.
+> git 문제
+```
+#include <stdio.h>
+
+int is369Number(int x);
+int is3MultipleNumber(int y);
+
+int main()
+{
+    int a = 0, b = 0, count = 0;
+    printf("1부터 99사이의 정수 두개를 입력하세요.\n");
+    scanf("%d %d", &a, &b);
+    
+    for(int i = a; i < b; i++)
+    {
+        if(is369Number(i))
+         count++;
+    
+        else if(is3MultipleNumber(i))
+         count++;
+    }
+    printf("%d ", count);
+    return 0;
+}
+
+ int is369Number(int x)
+{
+     int d;
+    if (x % 10 == 3 || x % 10 == 6 || x % 10 == 9 )
+        d = 1;
+    else if(x / 10 == 3 || x / 10 == 6 || x / 10 == 9)
+        d = 1;
+    else
+         d = 0;
+         return d;
+}
+ int is3MultipleNumber(int y)
+{
+     int c;
+     if(y % 3 == 0)
+         c = 1;
+     else c = 0;
+     return c;
+}
+
+```
 
 ## 4주차 배운 내용
 - 이곳에 작성하시면 됩니다.

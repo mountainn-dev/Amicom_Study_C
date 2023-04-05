@@ -101,7 +101,51 @@ int main() {
 ```
 
 ## 3주차 배운 내용
-- 이곳에 작성하시면 됩니다.
+-첫번째 문제
+```C
+#include <stdio.h>
+
+int main() {
+
+	int a, b;
+	int count = 0;
+
+	printf("입력:\n");
+	scanf_s("%d %d", &a, &b);
+
+	for (int i = a; i <= b; i++) {
+
+		if ((i % 10) % 3 == 0 || (i % 3 == 0) || ((i/10)%3 == 0) ) {
+
+			count++;
+
+		}
+
+	}
+
+	printf("출력:\n%d", count);
+
+	return 0;
+}
+```
+
+-두번째 문제
+```C
+#include <stdio.h>
+
+int main() {
+
+	char abcd[] = "hello world you can do it don't give up";
+	char efgh[sizeof(abcd)] = {0,};
+
+	strcpy(efgh, abcd);
+
+	printf(efgh);
+
+	return 0;
+
+}
+```
 
 ## 4주차 배운 내용
 - 이곳에 작성하시면 됩니다.

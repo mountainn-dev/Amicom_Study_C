@@ -18,7 +18,6 @@ int main(void) {
 int sam_yuk_gu(int a, int b) {
 
 	int count = 0;
-
 	for (int i = a; i <= b; i++) {
 		if (i % 3 == 0) count += 1;
 		else {

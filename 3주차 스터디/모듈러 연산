@@ -1,0 +1,45 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<math.h>
+
+#define SIZE 100
+int binary(int exp,int arr[]);
+
+int main(void) {
+	int num, exp, mod;
+	int arr[SIZE] = { 0 };
+	int arr_exp[SIZE] = { 0 };
+
+	printf("밑, 지수, 모듈러를 입력:");
+	scanf("%d %d %d", &num,&exp,&mod);
+
+	int last = binary(exp, arr);
+	printf("%d^%d mod = %lld",num,exp, result1(num, mod, arr, last));
+}
+
+int binary(int exp,int arr[]) {
+	static int i = 0;
+	arr[i] = exp % 2;
+	i++;
+	if (exp / 2 > 0) {
+		binary(exp / 2,arr);
+	}
+	return i;
+}
+int result1(int num,int mod,int arr[],int last) {
+	static int count = 0;
+	static int res = 1;
+	int mod_num = (long long)pow(num, 2) % mod;
+	if(count==0)
+		mod_num = num % mod;;
+	if (arr[count] == 1) {
+		res *= mod_num;
+		if (res > 100000)
+			res = res % mod;
+	}
+	count++;
+	if (count < last) {
+		result1(mod_num, mod, arr, last);
+	}
+	return res;
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(void)
+{
+	int num;
+	int arr[4];
+	int count=0;
+	scanf("%d", &num);
+	for (int i = 1;i <= num;i++)
+	{
+		if (i < 100) // 14,28, 74등 한 자리수와 두자리는 모두 한수임.
+			count++;
+		else if(i<1000)//최대값이 1000인데 1000은 한수가 아님. 즉 세자리 경우만 본다.
+		{
+			arr[0] = i / 100; //숫자가 156이면 1을 배열의 첫번째 인덱스에 저장.
+			arr[1] = (i %100)/10;// 둘째 자리를 두번째 인덱스에 저장.
+			arr[2] = i % 10; // 셋째자리를 세번째 인덱스에 저장.
+			if (arr[0]-arr[1]==arr[1]-arr[2]) // 등차수열의 정의를 사용.
+				count++;
+		}		
+
+	}
+	printf("%d", count);
+}

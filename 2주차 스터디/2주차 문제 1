@@ -1,0 +1,31 @@
+자연수 n을 입력받아 n이 굉장한 숫자인지 판단하는 프로그램을 작성해보세요.
+굉장한 숫자이기 위해서는 다음 두 조건 중 하나를 만족해야 합니다.
+•	홀수이면서 3의 배수인 수
+•	짝수이면서 5의 배수인 수
+
+==============================================================================
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int main(void)
+{
+	unsigned int userNum; //자연수를 입력하므로 양의 정수를 입력받는 변수 선언
+	printf("자연수를 입력하시오 :");
+	scanf("%d", &userNum);
+
+	if (userNum % 2 != 0 && userNum % 3 == 0) //홀수이면서 3의 배수일 때
+	{
+		printf("true");
+	}
+  
+	else if (userNum % 2 == 0 && userNum % 5 == 0) //짝수이면서 5의 배수일 때
+	{
+		printf("ture");
+	}
+  
+	else // 그 외의 경우
+	{
+		printf("false");
+	}
+	return 0;
+}

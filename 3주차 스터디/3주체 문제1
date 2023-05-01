@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int judge_369(int num1, int num2)//범위로 사용할 변수2개
+{
+	int count=0;//개수를 세기 위한 변수
+	for (int i = num1; i <= num2; i++)//num1이 num2가 될때까지 반복
+	{
+		if (i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9 || i / 10 == 3 || i / 10 == 6 || i / 10 == 9)
+		//앞에서 부터 3의 배수,일의자리가 3,6,9일때, 십의 자리가 3,6,9일때를 의미한다.
+			count++;
+	}
+	return count;
+}
+int main(void)
+{
+	int range1, range2;
+	printf("입력 :\n");
+	scanf("%d %d", &range1, &range2);
+	int count = judge_369(range1, range2);
+	printf("출력:\n%d", count);
+}
+
+//처음에는 3,6,9 숫자를 찾을때 (num1%10)%3==0,(num1/10)%3==0을 사용하려 했으나, 이 경우 10의 배수들과 한 자리 수들의 경우를 구분지어야 하므로 위의 방식을 선택함.  
